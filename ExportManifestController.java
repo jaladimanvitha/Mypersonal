@@ -121,7 +121,17 @@ public class ExportManifestController {
 			ArrayList<String> obj1 = (ArrayList<String>) request.getManifestInfo();
 			//Map[] map = new HashMap[];
 			
-			
+	/**
+ExportToExcelModel {senderName: "Manvitha", senderBusiness: "Test", shippingMethod: "MediaMail", storerNum: "12345", trackingNum: "12345", …}
+businessLocation: "Bangalore"
+manifestInfo: (6) ["{"takedownId":"T3-2826324191","createdBy":"5017476…nDate":"08/11/2014 19:48:23","customerName":null}", "{"takedownId":"T3-2826324191","createdBy":"5016450…nDate":"10/24/2018 15:31:27","customerName":null}", "{"takedownId":"","createdBy":"212028075","customer…erName":"RUSTON LOUISIANA HOSPITAL COMPANY, LLC"}", "{"takedownId":"","createdBy":"212028075","customer…erName":"RUSTON LOUISIANA HOSPITAL COMPANY, LLC"}", "{"takedownId":"","createdBy":"502744850","customer…":"UNIVERSITY MEDICAL SERVICE ASSOCIATION, INC."}", "{"takedownId":"","createdBy":"502744850","customer…":"UNIVERSITY MEDICAL SERVICE ASSOCIATION, INC."}"]
+manifestSeqNum: "DM20190320-299107"
+senderBusiness: "Test"
+senderName: "Manvitha"
+shippingMethod: "MediaMail"
+storerNum: "12345"
+trackingNum: "12345"
+	*/
             HSSFWorkbook workbook = new HSSFWorkbook();  
             HSSFSheet sheet = workbook.createSheet("Custom_Report"); 
             HSSFRow headerRow = sheet.createRow((short)0);
